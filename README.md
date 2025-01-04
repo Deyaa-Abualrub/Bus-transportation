@@ -1,2 +1,2 @@
 # Bus-transportation
-My Fifgm : https://www.figma.com/design/m9kUdxXKofBlMFA5HmHdQt/Untitled?node-id=0-1&p=f&t=ftojexjhpvfK0XzY-0
+My Figma : https://www.figma.com/design/m9kUdxXKofBlMFA5HmHdQt/Untitled?node-id=0-1&p=f&t=ftojexjhpvfK0XzY-0
