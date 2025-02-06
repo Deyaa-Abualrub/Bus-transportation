@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #1f2937;
+  --secondary-color: #eb2323;
+  --text-color: #333;
+  --second-text-color: #bbb;
+  --overlay-color: rgba(0, 0, 0, 0.566);
+  --padding-top: 100px;
+  --padding-bottom: 100px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("background.jpg") no-repeat center center/cover;
+  color: white;
+}
+
+/* Start About  */
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 50px;
+  color: #111;
+}
+.text-content {
+  max-width: 60%;
+}
+.text-content h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 31px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.text-content p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+.social-links {
+  margin-top: 20px;
+  border-bottom: 1px solid #bbb;
+}
+.social-links a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+i {
+  margin-right: 15px;
+}
+.email {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.image-content {
+  transform: rotate(5deg);
+  margin-bottom: 25px;
+}
+.image-content img {
+  width: 250px;
+  transform: rotate(20px);
+  border-radius: 10px;
+}
+/* End About  */
+/* Start Footer */
+
+.footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .column {
+  max-width: 300px;
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+}
+.footer .logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+.footer .social-icons {
+  margin-top: 20px;
+}
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  background: var(--primary-color);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer .quick-links ul,
+.footer .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .quick-links ul li,
+.footer .contact-info ul li {
+  margin: 10px 0;
+}
+.footer .newsletter input {
+  padding: 15px;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.footer .newsletter button {
+  padding: 15px;
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.footer-bottom {
+  text-align: center;
+  color: white;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  background-color: var(--primary-color);
+}
+/* End Footer */

@@ -1,8 +1,11 @@
 :root {
-  --primary-color: #3c8dbc;
-  --secondary-color: #f5f5f5;
+  --primary-color: #1f2937;
+  --secondary-color: #eb2323;
   --text-color: #333;
+  --second-text-color: #bbb;
   --overlay-color: rgba(0, 0, 0, 0.566);
+  --padding-top: 100px;
+  --padding-bottom: 100px;
 }
 body {
   font-family: Arial, sans-serif;
@@ -11,60 +14,9 @@ body {
   background: url("background.jpg") no-repeat center center/cover;
   color: white;
 }
-header {
-  background: var(--primary-color);
-  color: #fff;
-  padding: 20px 0;
-}
-
-.container1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: rgb(72, 22, 22);
-}
-
-.login-btn {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
-}
-
-.login-btn:hover {
-  background-color: rgba(0, 0, 0, 0.851);
-  color: white;
-}
 
 section.top {
-  background-image: url("../images/heroIndexPage.jpg");
+  background-image: url("../images/ticketsPhoto.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -111,7 +63,7 @@ section.top::before {
   margin-bottom: 20px;
 }
 
-.hero button {
+.hero > button {
   background: var(--primary-color);
   border: none;
   padding: 15px 30px;
@@ -122,7 +74,7 @@ section.top::before {
   transition: background 0.3s ease;
 }
 
-.hero button a {
+.hero > button a {
   color: #fff;
   text-decoration: none;
 }
@@ -130,11 +82,48 @@ section.top::before {
 .hero button:hover {
   background: #e76f51;
 }
+.hero .booking-form {
+  position: relative;
+  top: 93px;
+  background: rgb(248 248 248 / 60%);
+  max-width: 900px;
+  width: 900px;
+  left: 50%;
+  padding: 20px;
+  transform: translateX(-50%);
+  border: 2px solid #1f2937;
+  text-align: left;
+}
+
+.hero .booking-form input {
+  padding: 5px 20px;
+  font-size: 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  color: #808080;
+}
+
+.hero .booking-form button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero .booking-form h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
 .about-shuttle {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-top);
   gap: 50px;
   max-width: 1200px;
   margin: auto;
@@ -163,7 +152,7 @@ section.top::before {
 }
 
 .main-heading .underline {
-  border-bottom: 3px solid var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .description {
@@ -234,19 +223,23 @@ section.top::before {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--primary-color);
 }
 
 .years-experience .icon {
-  font-size: 2em;
+  font-size: 1.4em;
   color: var(--primary-color);
 }
 
 .years-experience .number {
-  font-size: 1.8em;
+  font-size: 1.3em;
   font-weight: bold;
   color: #333;
 }
-
+.years-experience p {
+  font-size: 16px;
+  font-weight: bold;
+}
 .overlay-image {
   position: absolute;
   top: 50%;
@@ -315,29 +308,25 @@ section.top::before {
 
 .text-section {
   flex: 1;
-  background: #111;
+  background: var(--primary-color);
   color: #fff;
   padding: 40px;
   border-radius: 10px;
 }
-
-.text-section h4 {
-  color: var(--primary-color);
-  font-size: 1.2em;
-}
-
 .text-section h2 {
   font-size: 2.5em;
   font-weight: bold;
 }
 
-.text-section h2 span {
+.text-section h4 {
+  font-size: 1.2em;
+}
+.text-section h4 span {
   border-bottom: 3px solid var(--primary-color);
 }
-
 .text-section p {
   font-size: 1em;
-  color: #bbb;
+  color: var(--second-text-color);
   margin-top: 15px;
 }
 
@@ -353,18 +342,18 @@ section.top::before {
 }
 
 .stat-box .icon {
-  font-size: 2.5em;
+  font-size: 1.8em;
   color: var(--primary-color);
 }
 
 .stat-box h3 {
   font-size: 1.8em;
-  margin: 10px 0 5px;
 }
 
 .stat-box p {
   font-size: 1em;
-  color: #bbb;
+  color: var(--second-text-color);
+  margin-top: 8px;
 }
 .container {
   text-align: center;
@@ -375,7 +364,7 @@ section.top::before {
   position: relative;
   z-index: -1;
 }
-.container::before{
+.container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -389,7 +378,7 @@ section.top::before {
   font-size: 2.5em;
 }
 .container span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: bold;
 }
 .testimonials {
@@ -431,8 +420,12 @@ section.top::before {
   font-size: 0.9em;
   color: gray;
 }
+
+/* Start Services */
+
 .services {
-  padding: 50px 20px;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-top);
 }
 
 .services h2 {
@@ -472,7 +465,9 @@ section.top::before {
   background: var(--primary-color);
   color: #fff;
 }
-
+.service-box.featured p {
+  color: var(--second-text-color) !important;
+}
 .service-box.featured a {
   color: #fff;
 }
@@ -489,7 +484,8 @@ section.top::before {
 }
 
 .service-box h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  color: #eb2323;
   margin-bottom: 10px;
 }
 
@@ -508,6 +504,8 @@ section.top::before {
 .service-box a:hover {
   text-decoration: underline;
 }
+/* End Services */
+/* Start Footer */
 .footer {
   background: var(--primary-color);
   color: #fff;
@@ -567,5 +565,57 @@ section.top::before {
   color: white;
   border-top: 1px solid #444;
   padding-top: 20px;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
 }
+/* End Footer */
+/* header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(72, 22, 22);
+}
+
+.login-btn {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: rgba(0, 0, 0, 0.851);
+  color: white;
+} */

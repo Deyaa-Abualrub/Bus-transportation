@@ -1,0 +1,191 @@
+:root {
+  --primary-color: #1f2937;
+  --secondary-color: #eb2323;
+  --text-color: #333;
+  --second-text-color: #bbb;
+  --overlay-color: rgba(0, 0, 0, 0.566);
+  --padding-top: 100px;
+  --padding-bottom: 100px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("background.jpg") no-repeat center center/cover;
+  color: white;
+}
+
+.bus-card {
+  display: flex;
+  background: var(--secondary-color);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+.bus-image {
+  width: 100px;
+  height: 60px;
+  margin-right: 20px;
+}
+.bus-info,
+.details,
+.price {
+  flex: 1;
+}
+.view-seats {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Start ViewSeat */
+.container-seat {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+div .seats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border-right: 2px solid #ddd;
+  flex: 0.5;
+}
+.seats .seat {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.seat.selected {
+  background: red;
+  color: white;
+}
+.container-info {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1.3;
+  color: black;
+  font-weight: 500;
+}
+.container-info .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.container-info .info i {
+  font-size: 18px;
+}
+.container-info .info div {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.container-info .info div p {
+  margin: 0;
+}
+.container-info .info div p:first-child {
+  font-weight: bold;
+}
+.check-info {
+  flex: 0.8;
+}
+.check-info .fare-info {
+  height: 82%;
+  border-radius: 10px;
+  border: 1px solid #eb2323;
+}
+.check-info .fare-info p{
+    color: black;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+.check-info .book-btn {
+  background: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* End ViewSeat */
+/* Start Footer */
+.footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .column {
+  max-width: 300px;
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+}
+.footer .logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+.footer .social-icons {
+  margin-top: 20px;
+}
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  background: var(--primary-color);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer .quick-links ul,
+.footer .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .quick-links ul li,
+.footer .contact-info ul li {
+  margin: 10px 0;
+}
+.footer .newsletter input {
+  padding: 15px;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.footer .newsletter button {
+  padding: 15px;
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.footer-bottom {
+  text-align: center;
+  color: white;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  background-color: var(--primary-color);
+}
+/* End Footer */
