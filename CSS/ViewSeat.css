@@ -118,6 +118,7 @@ div .seats {
 }
 .check-info .book-btn {
   background: red;
+  width: 100%;
   color: white;
   padding: 10px;
   text-align: center;
